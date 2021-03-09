@@ -1,0 +1,2 @@
+kubectl expose deployment laravel-deploy --type="LoadBalancer"
+https://pusher.com/tutorials/laravel-kubernetes-google-cloud

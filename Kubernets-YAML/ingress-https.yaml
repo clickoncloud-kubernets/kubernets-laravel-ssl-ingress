@@ -1,0 +1,20 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: demo-ingress
+  annotations:
+    ingress.kubernetes.io/rewrite-target: /
+spec:
+  tls:  
+  - hosts:
+      - my.clickoncloud.in
+    secretName: my-clickoncloud-in
+
+  rules:
+  - host: my.clickoncloud.in
+    http:
+      paths:
+      - backend:
+          serviceName: laravel
+          servicePort: 80
+

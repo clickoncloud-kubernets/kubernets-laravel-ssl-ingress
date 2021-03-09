@@ -1,0 +1,8 @@
+How Deploy New Version
+=========================
+kubectl set image deploy laravel-deploy laravel=soumenbiswas212/kubernets-laravel:v2
+kubectl rollout status deployment/laravel-deploy
+
+deployment "my-deploy" successfully rolled out
+
+
