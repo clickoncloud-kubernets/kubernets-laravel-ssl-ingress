@@ -1,2 +1,5 @@
 kubectl get ns
 kubectl -n ingress-nginx get svc
+
+
+ORIINAL GITHUB " https://github.com/kubernetes/ingress-nginx.git "
